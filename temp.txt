@@ -1,0 +1,99 @@
+Useful commands
+https://community.c9.io/t/connecting-php-to-mysql/1606 
+https://www.youtube.com/watch?v=yPu6qV5byu4 
+
+mysql-ctl start
+
+mysql-ctl cli
+
+SHOW DATABASES;
+
+USE play_my_song;
+
+SHOW TABLES;
+
+DESCRIBE Users; //the name of the table (Users)
+
+ALTER TABLE tablename ADD VARCHAR(100) AFTER name;
+
+ALTER TABLE tablename CHANGE oldname newname INT UNSIGNED NOT NULL;
+
+to remove all data from a table use Truncate table tablename
+
+DELETE a Table: DROP TABLE table_name ;
+
+//////////////////////////////////////////////////////////////////
+Create table statements for our database
+
+1. Patron
+
+	CREATE TABLE Users (
+	
+	user_id int auto_increment NOT NULL PRIMARY KEY,
+	firstname varchar(40) NOT NULL,
+	lastname varchar(40) NOT NULL,
+	password varchar(32) NOT NULL,
+	email varchar(128) NOT NULL,
+	username varchar(32) NOT NULL,
+	profile_img varchar(100) NOT NULL
+	);
+	
+2. Event
+
+		CREATE TABLE Event (
+		
+		event_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+		event_name varchar(40) NOT NULL,
+		location varchar(100) NOT NULL,
+		description varchar(500) NOT NULL,
+		start_time datetime NOT NULL,
+		end_time datetime NOT NULL,
+		user_id int UNSIGNED NOT NULL,
+		song_request_Limit int(2),
+		event_img varchar(100) 
+		);
+		
+3. RSVP
+
+			CREATE TABLE RSVP (
+			rsvp_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+			event_id int UNSIGNED NOT NULL,
+			user_id int UNSIGNED NOT NULL
+			);
+			
+			
+4. Wish List
+
+				CREATE TABLE WishList (
+				
+				wishlist_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+				song_id int UNSIGNED NOT NULL,
+				user_id int UNSIGNED NOT NULL
+				);
+	
+
+5. Downloaded Database
+
+	
+			CREATE TABLE Songs (
+				
+				song_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+				song_name varchar(50) NOT NULL,
+				genre varchar(25) NOT NULL,
+				author varchar(40) NOT NULL
+				
+				);
+				
+				
+	
+
+6. Song Request
+
+CREATE TABLE SongRequest (
+song_id int unsigned NOT NULL auto_increment PRIMARY KEY,
+user_id int UNSIGNED NOT NULL,
+event_id int UNSIGNED NOT NULL,
+song_name VARCHAR(50) NOT NULL,
+artist VARCHAR(50),
+approval enum('Y','N')
+);
