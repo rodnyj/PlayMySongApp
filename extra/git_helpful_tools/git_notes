@@ -1,0 +1,14 @@
+To switch branches: git checkout [branch-name]
+After adding and committing your changes...
+To push your changes to your branch on github: $ git push origin [name_of_your_branch]
+       ex) git push origin Rodny
+
+To pull changes from github: git fetch 
+
+To update your branch with whats in master branch (make sure you are in your branch): git rebase origin master
+
+Any questions, please ask
+
+
+other sources
+http://stackoverflow.com/questions/3876977/update-git-branches-from-master

@@ -1,0 +1,9 @@
+getting started
+
+1. Download git to your machine
+2. Download git bash (I don't remember if this comes with git or if it is seperate. When I find out I will update this)
+3. (optional) download "github desktop" - a gui if you don't like using terminal
+4. (for windows) download wampserver - The tutorial in Lynda.com shows step by step how to download, install, and configure wampserver. You'll need it to run your server side website locally on your machine
+    ------> PS. if you have a mac, The tutorial in Lynda.com also shows you how to get a local server running on your machine 
+5. You'll need a text editor. Personally I use Sublime Text (free software) but another popular text editor is notepad++
+
