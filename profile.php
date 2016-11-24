@@ -31,7 +31,7 @@ session_start();
         <?php
             if(isset($_SESSION['username']))
             {
-                if($_SESSION['username'] == 'Developer')
+                if($_SESSION['username'] == 'Developer' || $_SESSION['username'] == 'rodny')
                 {
  
                     echo "<h1 class=center> WELCOME " .$_SESSION['username']. "!</h1>" ;
@@ -43,6 +43,7 @@ session_start();
                     echo "<h3 class=center>". $_SESSION['firstname'] . " " . $_SESSION['lastname'] . "</h3>";
                     echo "<h3 class=center>". $_SESSION['email']. "</h3><br>";
                     echo "<a class=center href=developer.php?reports=true><h3>Reports </h3></a><br> ";
+                    echo "<a class=center href=./php/developer_account.php><h3>Dev Acc </h3></a><br> ";
     
                     if($_GET['choice']==1)
                     {

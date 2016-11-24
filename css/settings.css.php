@@ -28,6 +28,11 @@ table#songrequest{
     margin-left: 33%;
 }
 
+table#signin{
+    display: block;
+    margin-left: 36%;
+}
+
 td{
     padding-right: 10px;
 }
