@@ -52,6 +52,7 @@ require './php/my_sql_exec.php';
                                 <h3>Bug Report</h3><hr><br>
                                 
                                 <div>
+                                    <h3 class=center> Feature Coming Soon </h3>
                                     <?php
                                       /*  if(mysql_num_rows($result) <= 0)
                                             echo "<h3 class=center> No Bug Reports</h3>";
@@ -75,7 +76,7 @@ require './php/my_sql_exec.php';
                                 <h3>Feedback</h3><hr><br>
                                 
                                 <div>
-                                    <p> </p>
+                                    <h3 class=center> Feature Coming Soon </h3>
                                 </div>
                             </article>
                         </section>
