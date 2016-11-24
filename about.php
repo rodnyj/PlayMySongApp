@@ -31,7 +31,11 @@ session_start();
         <section>
             <h1 class=center> About The Author</h1>
 			<article>
-
+                <div>
+                    <img class=author src="./img/authors_img/rodny0.jpg" alt="Image Not Available"/>
+                    <h3 class=center> Rodny Joseph</h3>
+                    <h6 class=center> Lead Developer</h6>
+                </div>
             </article>
         </section>
 
