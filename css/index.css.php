@@ -74,7 +74,6 @@ and (max-device-width : 604px) {
     /* aside article */
     
     aside{
-        text-align: center;
         max-width: 99%;
         border: 1px solid #008080;
         border-radius: 12px;

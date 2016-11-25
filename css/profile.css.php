@@ -10,3 +10,13 @@
     padding-bottom: 2%;
 }
 
+/* Media Query ------------------------- */
+
+@media screen and (max-width: 600px){
+    
+    .profile_en{
+        margin-top: 8%;
+    }
+
+}
+

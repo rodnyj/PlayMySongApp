@@ -68,5 +68,31 @@ td.createevent{
     #event_viewer_main_img{
         height: 0;
     }
+    
+#create_event_form{
+    text-align: left;
+    font-size: 20px;
+    margin-bottom: 2%;
+}
 
+input{
+    font-size: 12px;
+}
+
+#create_event_header{
+    text-align: center;
+    font-size: 2em;
+    padding: 2%;
+}
+
+textarea{
+    width: 100%;
+    height: 60px;
+    resize: none;
+    font-size:12px
+}
+
+td.createevent{
+    width: 100%;
+}
 }
