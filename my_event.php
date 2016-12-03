@@ -9,6 +9,7 @@
                             }
                             else
                             {
+                                echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO SEE REQUESTED SONGS</h1><hr>";
                                 include './php/display_my_events.php';
 
                                    // echo "Ability to Modify Date And Event Information Coming Soon";

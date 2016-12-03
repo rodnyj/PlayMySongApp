@@ -1,12 +1,11 @@
 <?php
 
-//Creating a table to place the contents
-echo "<table class=rsvp>";
-echo "<tbody>";
-
 //will grab all contents from database and display them by their name
 while($row = $result->fetch_assoc())
 {
+//Creating a table to place the contents
+echo "<table class=rsvp>";
+echo "<tbody>";
     
     //if event_img is null, then do
     if($row["event_img"] == "")
@@ -16,7 +15,11 @@ while($row = $result->fetch_assoc())
         //starts echo "<div class=discover-main>";
         //echo "<div class=discover-main>";
             echo "<td>";
-                echo "<img class='call_event_img' src='./img/event_img/partypeople5454.jpg' alt='Image Not Available 1'>";
+                echo "
+                        <a href=song_requests.php?songrequest=".$row["event_id"].">
+                            <img class='call_event_img' src='./img/event_img/partypeople5454.jpg' alt='Image Not Available 1'>
+                        </a>
+                    ";
             echo "</td>";
     }
     else
@@ -26,12 +29,17 @@ while($row = $result->fetch_assoc())
  //       echo "<div class=discover-main>";
             //displays event image that user uploaded
             echo "<td>";
-                echo "<img class='all_event_img' src='".$row["event_img"]."' alt='Image Not Available 2'>";
+                echo "
+                        <a href=song_requests.php?songrequest=".$row["event_id"].">
+                        <img class='all_event_img' src='".$row["event_img"]."' alt='Image Not Available 2'>
+                        </a>
+                    ";
             echo "</td>";
     }
             //echo's the event informations
             echo "
                     <td>
+                    <a href=song_requests.php?songrequest=".$row["event_id"].">
                         <ul>
                             <li class=rsvp>Event Name: " . $row['event_name'] . "</li>
                             <li class=rsvp>Location: " . $row['location'] . "</li>
@@ -39,17 +47,17 @@ while($row = $result->fetch_assoc())
                             <li class=rsvp>Start Date & Time: " . $row['start_time'] . "</li>
                             <li class=rsvp>End Date & Time: " . $row['end_time'] . "</li>
                           <!--  <li class=rsvp>Song Request Limit: " . $row[''] . "</li> -->
-                            <li class=rsvp><a href=song_requests.php?songrequest=".$row["event_id"].">All Song Requests</a></li>
                         </ul>
+                    </a>
                     </td>
            
                 ";
         //ends echo "<div class=discover-main>";
 //        echo "</div>";
         echo "</tr>";
-}
 echo "</table>";
 echo "</tbody>";
+}
 ?>
 
 

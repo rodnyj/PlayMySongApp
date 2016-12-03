@@ -9,6 +9,7 @@
         }
         else
         {
+            echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO REQUEST A SONG</h1><hr>";
             while($rsvp_rows = $run->fetch_assoc()) // fetches all rows that meets condition
             {
                 // troubleshoot echo $rsvp_rows['event_id'];
