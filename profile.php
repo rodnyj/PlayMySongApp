@@ -34,7 +34,7 @@ session_start();
                 if($_SESSION['username'] == 'Developer' || $_SESSION['username'] == 'rodny')
                 {
  
-                    echo "<h1 class=center> WELCOME " .$_SESSION['username']. "!</h1>" ;
+                    echo "<h1 class='profile_en center'> WELCOME " .$_SESSION['username']. "!</h1>" ;
                     echo "
                         <div>
                             <img id=profileImg src='" .$_SESSION['profile_img']. "'>
@@ -60,7 +60,7 @@ session_start();
                 }
                 else
                 {
-                    echo "<h1 class=center> WELCOME " .$_SESSION['username']. "!</h1>" ;
+                    echo "<h1 class='center profile_en'> WELCOME " .$_SESSION['username']. "!</h1>" ;
                     echo "
                         <div>
                             <img id=profileImg src='" .$_SESSION['profile_img']. "'>

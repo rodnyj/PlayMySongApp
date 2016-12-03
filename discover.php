@@ -40,8 +40,8 @@ $conn = connection();
             <div>
                 <br>
                 <input class=center2 type="text" name="search_name">
-                <input type="submit" name="search" value="search">
-                <input type="submit" name="all" value="Show All Events">
+                <input class=center4 type="submit" name="search" value="search">
+                <input class=center5 type="submit" name="all" value="Show All Events">
             </div>
         </form>
         <hr>

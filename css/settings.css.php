@@ -127,6 +127,7 @@ form{
         border: 0;
         border-radius: 0;
         width: auto;
+        margin: 5%;
     }
     
     table{

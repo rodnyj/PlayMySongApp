@@ -43,8 +43,9 @@ session_start();
             <article>
                <h3 class=center>Version 1. 3</h3><br>
                <ul class=side>
-                   <li>Ability to create events</li>
-                   <li>Ability to search created events using Event Name or Location</li>
+                   <li>Feedback functionality</li>
+                   <li>Bug Report functionality</li>
+                   <li>More Mobile Friendly</li>
                </ul>
                <hr>
                <button class=version><a href="about.php?previousversions=set"> View Previous Versions</a></button>
@@ -67,8 +68,14 @@ session_start();
                 <h3 class=center>Coming Soon In Later Versions</h3><br>
                 <ul class=side>
                     <li>Ability to Add to Approved List and Wishlist</li></li>
+                    <li>Private Events</li>
                     <li>Ability to search using Event Token</li>
                     <li>Ability to search through youtube api for songs</li>
+                    <li>HomePage Event Featuring</li>
+                    <li>Help Page</li>
+                    <li> Default Profile Picture If No Picture is Uploaded</li>
+                    <li>Ability to update profile picture, User Information, and Password</li>
+                    <li>More Mobile Friendly</li>
                 </ul>
             </article>
             

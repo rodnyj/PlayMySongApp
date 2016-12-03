@@ -51,3 +51,42 @@ a.a{
     text-decoration: underline;
     color: darkblue;
 }
+
+@media screen and (max-width: 600px){
+body{
+    background-color: lightgray;
+}
+
+.center{
+    margin: 3%;
+}
+
+.center2{
+    margin-left: 35%;
+    display: block;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.center3{
+    margin-top: 4%;
+    margin-left: 46%;
+    display: block;
+
+}
+
+.center4{
+    margin-left: 32%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+.center5{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 2%;
+}
+
+}
