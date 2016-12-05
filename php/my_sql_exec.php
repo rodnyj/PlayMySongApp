@@ -29,7 +29,7 @@ function my_sql_exec($conn, $sql)
     }
     else 
     {
-    echo "<h3 class=center>Something Went Wrong :( </h3><br>";
+    //echo "<h3 class=center>Something Went Wrong :( </h3><br>";
     //below to test if getting errors  
     //echo "Error: " .$sql."<br/>".mysqli_error($conn);
     }

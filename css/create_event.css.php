@@ -38,23 +38,23 @@
 }
 
 table.createevent{
-    display: block;
+
     margin: 0 auto;
-    max-width: 75%;
+    max-width: 90%;
     
 }
 
 input{
     border: 2px solid black;
-    width: 99%;
-    font-size:25px
+    width: 90%;
+    font-size:14px
 }
 
 textarea{
-    width: 285px;
+    width: 17em;
     height: 100px;
     resize: none;
-    font-size:25px
+    font-size:15px
 }
 
 td.createevent{
@@ -86,10 +86,10 @@ input{
 }
 
 textarea{
-    width: 100%;
+    width: 11em;
     height: 60px;
     resize: none;
-    font-size:12px
+
 }
 
 td.createevent{

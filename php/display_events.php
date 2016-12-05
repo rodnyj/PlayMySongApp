@@ -19,11 +19,11 @@ while($row = $result->fetch_assoc())
     //echo's the event informations
     echo "
             <div class=event-details> 
-                <p><h2>Event Name</h2> '" . $row['event_name'] . "'</p><br>
-                <p><h3>Location</h3> '" . $row['location'] . "'</p><br>
-                <p><h3>Description</h3>'" . $row['description'] . "'</p><br>
-                <p><h3>Start Date & Time</h3> '" . $row['start_time'] . "'</p><br>
-                <p><h3>End Date & Time</h3> '" . $row['end_time'] . "'</p><br>
+                <p><h2>Event Name</h2> " . $row['event_name'] . "</p><br>
+                <p><h3>Location</h3> " . $row['location'] . "</p><br>
+                <p><h3>Description</h3>" . $row['description'] . "</p><br>
+                <p><h3>Start Date & Time</h3> " . $row['start_time'] . "</p><br>
+                <p><h3>End Date & Time</h3> " . $row['end_time'] . "</p><br>
                 <h3><a href=rsvp.php?rsvp_for_event=".$row['event_id'].">RSVP For This Event</a></h3><br>
             </div>
         ";

@@ -24,7 +24,7 @@ session_start();
     <?php include './php/nav.php';?>
 
     <main>
-        <h1 class="center"> Request A Song To The DJ</h1>
+        <h1 class="center"> Request A Song To The DJ</h1><br>
         <section>
             <form id="form1" method="post"  action="<?php echo $_SERVER['PHP_SELF'];?>" >
                 
@@ -73,11 +73,12 @@ session_start();
                        $userid_rs = $rows['user_id'];
                        $event_id_rs = $rows['event_id'];
                        
-                        $sql = "INSERT INTO SongRequest VALUES('', '".$userid_rs."','".$event_id_rs."','".$songname."','".$artist."','');";
+                        $sql = "INSERT INTO SongRequest VALUES('', '".$userid_rs."','".$event_id_rs."','".$songname."','".$artist."','N');";
                         
                         my_sql_exec($conn, $sql);
                         
-                        echo "<h1 class=center>Song Name: ".$songname.", was Succesfully RSVP'd For</h1>";
+                        echo "<br> <h3 class=center> Thank You For Requesting ".$songname." By ".$artist."</h3>";
+                       // echo "<h1 class=center>Song Name:".$songname.", Was Succesfully Requested For</h1>";
                         
                    }
                    else

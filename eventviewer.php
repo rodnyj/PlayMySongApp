@@ -48,6 +48,9 @@ session_start();
             <article id="create-event3">
                 <h1><a href="eventviewer.php?choice=3">MY EVENTS</a></h1>
             </article>
+            <article id="create-event3">
+                <h1><a href="eventviewer.php?choice=4">WishList</a></h1>
+            </article>
         </aside>   
             
         <section>
@@ -77,7 +80,7 @@ session_start();
                         
                         if($_GET['choice'] == 1)
                         {
-                            echo "<h1 id=create_event_header>Create A New Event</h1>";
+                            echo "<h3 id=create_event_header>Create A New Event</h3>";
             ?>
                     <!-- choice 1 html form -->
                     <?php include('create_event.php'); ?>
@@ -98,12 +101,17 @@ session_start();
                             include 'my_event.php';
                         }
 
+                        if($_GET['choice'] == 4)
+                        {
+                            include 'wishlist.php';
+                        }
+
                     }
                 }
                 else 
                 {
                     if($_GET['choice']){
-                        echo "<h1 class=isnotset> PLEASE SIGN IN: <a class=isnotset href=signin.php> CLICK HERE </a></h1>";
+                        echo "<h1 class=isnotset> PLEASE LOGIN: <a class=isnotset href=signin.php> CLICK HERE </a></h1>";
                         echo "<h1 class=isnotset> DON'T HAVE AN ACCOUNT? <br>PLEASE SIGNUP: <a class=isnotset href=signup.php> CLICK HERE </a></h1>";
                     }
                 }

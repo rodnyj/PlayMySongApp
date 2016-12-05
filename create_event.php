@@ -3,8 +3,8 @@
     <table class=createevent>
         <tr><td class=createevent>Event Name:</td> <td><input class="c_e_class" id="create_event_name_id" type="text" name="event_name"/></td></tr>
         <tr><td class=createevent>Location:</td> <td><input class="c_e_class" id="create_event_locatio_id" type="text" name="event_location"/></td></tr>
-        <tr><td class=createevent>Start Date:</td> <td><input class="c_e_class" id="startdate_id" type="date" name="start_time" value="YYYY-MM-DD HH:MM:SS"></td></tr>
-        <tr><td class=createevent>End Date:</td> <td><input class="c_e_class" id="enddate_id" type="date" name="end_time" value="YYYY-MM-DD HH:MM:SS"></td></tr>
+        <tr><td class=createevent>Start Date & Time:</td> <td><input class="c_e_class" id="startdate_id" type="datetime-local" name="start_time"></td></tr>
+        <tr><td class=createevent>End Date & Time:</td> <td><input class="c_e_class" id="enddate_id" type="date" name="end_time"></td></tr>
         <!-- <tr><td class=createevent>Song Request Limit:</td> <td><input class="c_e_class" type="text" name="song_request_Limit"></td></tr> -->
         <tr><td class=createevent>Description:</td> <td><textarea class="c_e_class" name="event_description" id="description_id" cols=25 rows=3></textarea></td></tr>
         <tr><td class=createevent>Upload An Image:</td> <td><input class="c_e_class" id="create_event_img_id" type="file" name="myfile"/></td></tr>

@@ -43,6 +43,11 @@ article{
     border: 2px solid black;
     border-radius: 5px;
 }
+
+a{
+    
+}
+
 /* Screensize 900px or larger---------- */
 @media(min-width: 900px){
     main{

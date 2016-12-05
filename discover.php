@@ -32,7 +32,7 @@ $conn = connection();
     <main>
         
         <form id="seaches" method="POST" action=<?php echo $_SERVER['PHP_SELF']; ?> >
-            <h3 class=center>Search by Event Name or Event Location</h3>
+            <br><h3 class=center>Search by Event Name or Event Location</h3>
             <select class=center3 name="searchtype">
               <option value="name">Name</option>
               <option value="location">Location</option>

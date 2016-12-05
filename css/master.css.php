@@ -9,6 +9,10 @@
     margin: 0 auto;
 }
 
+.default-80{
+    width: 80%;
+}
+
 
 h1, h2, h3, h4, h5, h6, p, body {
 	margin: 0;
@@ -99,9 +103,13 @@ ul.main-nav li.dropdown {
     display: none;
     position: absolute;
     background-color: gray;
-    min-width: 96px;
+    min-width: 95px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     margin-right: 50%;
+}
+
+.dropdown-content-log {
+    min-width: 142px;
 }
 
 .dropdown-content a {
@@ -149,3 +157,14 @@ ul.main-nav li.dropdown {
 
 
 /* class -------------------- */
+
+.butn{
+    font-size: 50px;
+}
+
+.bb{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    top: 25%;
+}

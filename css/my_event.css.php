@@ -13,3 +13,7 @@ tr.myevent, th.myevent, td.myevent {
    border: 3px solid black;
    padding: 15px;
 }
+
+.default-28{
+   width: 28%;
+}

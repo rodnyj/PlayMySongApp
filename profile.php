@@ -60,12 +60,23 @@ session_start();
                 }
                 else
                 {
-                    echo "<h1 class='center profile_en'> WELCOME " .$_SESSION['username']. "!</h1>" ;
-                    echo "
-                        <div>
-                            <img id=profileImg src='" .$_SESSION['profile_img']. "'>
-                        </div>    
-                        ";
+                    echo "<br><h1 class='center profile_en'> WELCOME " .$_SESSION['username']. "!</h1>" ;
+                    if($_SESSION['profile_img'] == NULL)
+                    {
+                        echo "
+                            <div>
+                                <img id=profileImg src='img/default_profile_img/headshot.png'>
+                            </div>    
+                            ";                        
+                    }
+                    else
+                    {
+                        echo "
+                            <div>
+                                <img id=profileImg src='" .$_SESSION['profile_img']. "'>
+                            </div>    
+                            ";
+                    }
                     echo "<h3 class=center>". $_SESSION['firstname'] . " " . $_SESSION['lastname'] . "</h3>";
                     echo "<h3 class=center>". $_SESSION['email']. "</h3>";
     

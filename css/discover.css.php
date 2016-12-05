@@ -16,6 +16,10 @@ no-block{
 .discover-main{
     border: 2px solid darkblue;
     border-radius: 5px;
+    diplay: block;
+    margin: 0 auto;
+    
+    width: 80%;
 }
 
 .center2{
