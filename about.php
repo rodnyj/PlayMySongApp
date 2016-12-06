@@ -41,10 +41,10 @@ session_start();
 
         <aside>
             <article>
-               <h3 class=center>Version 1. 3</h3><br>
+               <h3 class=center>Version 1. 4</h3><br>
                <ul class=side>
-                   <li>Feedback functionality</li>
-                   <li>Bug Report functionality</li>
+                   <li>Ability to Move/Save to Approved List and WishList</li>
+                   <li>UI Enhanchments</li>
                    <li>More Mobile Friendly</li>
                </ul>
                <hr>
@@ -67,7 +67,8 @@ session_start();
             <article>
                 <h3 class=center>Coming Soon In Later Versions</h3><br>
                 <ul class=side>
-                    <li>Ability to Add to Approved List and Wishlist</li></li>
+                    <li>Ability to Remove Events from RSVP or Delete Events From My Events</li></li>
+                    <li>Nicer HomePage</li>
                     <li>Private Events</li>
                     <li>Ability to search using Event Token</li>
                     <li>Ability to search through youtube api for songs</li>
@@ -76,6 +77,7 @@ session_start();
                     <li> Default Profile Picture If No Picture is Uploaded</li>
                     <li>Ability to update profile picture, User Information, and Password</li>
                     <li>More Mobile Friendly</li>
+                    <li>Migrate to Heroku</li>
                 </ul>
             </article>
             

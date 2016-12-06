@@ -1,3 +1,12 @@
+<h3 class=center>Version 1. 3</h3><br>
+<ul class=side>
+    <li>Feedback functionality</li>
+    <li>Bug Report functionality</li>
+    <li>More Mobile Friendly</li>
+</ul>
+<hr>
+<br>
+
 <h3 class=center>Version 1. 2</h3><br>
 <ul class=side>
    <li>Ability to RSVP for events</li>
