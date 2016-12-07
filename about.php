@@ -17,7 +17,6 @@ session_start();
     
 	<!-- stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./css/master.css.php">
-	<link rel="stylesheet" type="text/css" href="./css/index.css.php">
 	<link rel="stylesheet" type="text/css" href="./css/about.css.php">
 
 </head>
@@ -32,9 +31,9 @@ session_start();
             <h1 class=center> About The Author</h1>
 			<article>
                 <div>
-                    <img class=author src="./img/authors_img/rodny0.jpg" alt="Image Not Available"/>
-                    <h3 class=center> Rodny Joseph</h3>
-                    <h6 class=center> Lead Developer</h6>
+                    <?php
+                        include './php/author.php';
+                    ?>
                 </div>
             </article>
         </section>

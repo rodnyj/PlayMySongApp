@@ -18,7 +18,7 @@
         else
         {
             echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO REQUEST A SONG</h1>";
-            //echo "<div class='default default-28'> <button> Click Here To Remove An Event</button></div>";
+            echo "<div class='default default-28'> <button> Click Here To Remove An Event</button></div>";
             echo "<hr>";
             //echo "<div class='default default-80'>";
             while($rsvp_rows = $run->fetch_assoc()) // fetches all rows that meets condition

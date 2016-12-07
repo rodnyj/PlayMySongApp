@@ -11,7 +11,17 @@
     padding-left: 4%;
 }
 
+.all_event_img_2{
+    max-width: 200px;
+    padding-left: 4%;
+}
+
 .call_event_img{
+    padding: 4%;
+    max-width: 200px;
+}
+
+.call_event_img_2{
     padding: 4%;
     max-width: 200px;
 }

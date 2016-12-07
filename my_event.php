@@ -17,9 +17,6 @@
                             }
                             else
                             {
-                                echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO SEE REQUESTED SONGS</h1>";
-                                //echo "<div class='default default-28'> <button> Click Here To Delete An Event</button></div>";
-                                echo "<hr>";
                                 include './php/display_my_events.php';
 
                                    // echo "Ability to Modify Date And Event Information Coming Soon";

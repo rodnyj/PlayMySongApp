@@ -27,7 +27,7 @@ session_start();
 
     <main id="homepage">
         <section>
-            <article>
+            <article class=riri>
                 <h1>Welcome To Play My Song</h1>
                 <br />
                 <h4>What do we do?</h4>
@@ -62,7 +62,7 @@ session_start();
                 </p>
             </article>
 
-            <article>
+            <article class=titi>
                 <h1>QUOTES</h1>
                 <br />
                 <p>"Gee I sure did save alot of time by not having to walk all the way over there!" -Adam</p>
@@ -72,7 +72,7 @@ session_start();
                 <p>"This s*** is dope!" -Alicia</p>
             </article>
 
-            <article style="text-align:center;">
+            <article class=mimi style="text-align:center;">
                 Enjoy!
             </article>
         </section>

@@ -13,10 +13,11 @@ h1{
 }
 
 main{
-	margin-left: 5%;
-	margin-right: 5%;
+	margin-left: 0.5%;
+	margin-right: 0.5%;
 	padding: 25px;
 	background: lightgray;
+	color: white;
 }
 
 #homepage{
@@ -24,9 +25,7 @@ main{
 }
 
 section{
-    background: #867979;
-    border: 2px solid grey;
-    border-radius: 5px;
+    background: white;
     margin-right: 2%;
 }
 
@@ -40,12 +39,24 @@ aside{
 article{
     margin: 2%;
     padding: 2%; 
-    border: 2px solid black;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 a{
     
+}
+
+/* Colors ---------------------- */
+.riri{
+    background: #232f3e;
+}
+
+.titi{
+    background: #841B2D;
+}
+
+.mimi{
+    background: #3B444B;
 }
 
 /* Screensize 900px or larger---------- */
@@ -54,7 +65,7 @@ a{
         display: flex;
     }
     section{
-        flex: 3;
+        flex: 4;
     }
     
     aside{

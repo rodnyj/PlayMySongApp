@@ -48,6 +48,7 @@ session_start();
             <article id="create-event3">
                 <h1><a href="eventviewer.php?choice=3">MY EVENTS</a></h1>
             </article>
+            
             <article id="create-event3">
                 <h1><a href="eventviewer.php?choice=4">WishList</a></h1>
             </article>
@@ -99,6 +100,12 @@ session_start();
                         if($_GET['choice'] == 3)
                         {
                             include 'my_event.php';
+                            if(($_GET['delete'] == "on"))
+                              delete_on($result);  
+                            else
+                            {
+                                my_event($result);
+                            }
                         }
 
                         if($_GET['choice'] == 4)

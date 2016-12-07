@@ -55,8 +55,9 @@ while($row = $result->fetch_assoc())
         echo "</tr>";
 echo "</a>";
 }
-echo "</table>";
 echo "</tbody>";
+echo "</table>";
+
 ?>
 
 
