@@ -68,6 +68,10 @@ function my_event($result)
 
 function delete_on($result)
 {
+    function iframe()
+    {
+        
+    }
 
     echo "<h1 class='center rsvp_header'> Caution!! <br>Events CAN'T be retrieved once Deleted!!! :( <br> Click An Event To Delete</h1>";
     echo "<div class='default default-10'> <button><a href='eventviewer.php?choice=3'> Return</a></button></div>";
@@ -82,16 +86,7 @@ function delete_on($result)
         {
             //starts echo "<div class=discover-main>";
             //echo "<div class=discover-main>";
-            echo "
-                    <div class='flex-item-delete'>
-                        <a class=a-delete href=song_requests.php?songrequest=".$row["event_id"].">
-                           <!-- <div class=a-delete>
-                                <p class=in> Name </p>
-                                <p class=in> Location </p> -->
-                            <img class='call_event_img_2' src='./img/event_img/partypeople5454.jpg' alt='Image Not Available 1'>
-                        
-                    
-                ";
+            echo "<iframe src='./php/putin_iframe.php'></iframe>";
         }
         else
         {
