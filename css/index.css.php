@@ -13,11 +13,8 @@ h1{
 }
 
 main{
-	margin-left: 0.5%;
-	margin-right: 0.5%;
-	padding: 25px;
 	background: lightgray;
-	color: white;
+	color: black;
 }
 
 #homepage{
@@ -25,15 +22,11 @@ main{
 }
 
 section{
-    background: white;
     margin-right: 2%;
 }
 
 aside{
-    background: #a65959;
-    border: 2px solid gray;
-    border-radius: 5px;
-
+    margin-top: 1.5%;
 }
 
 article{
@@ -42,17 +35,17 @@ article{
     border-radius: 20px;
 }
 
-a{
-    
+.side-img{
+    max-width: 100%;
 }
 
 /* Colors ---------------------- */
 .riri{
-    background: #232f3e;
+    background-image: url("../img/homepage/cb1532b03a0ffa6c8c26d0348a7eb60d.jpg");
 }
 
 .titi{
-    background: #841B2D;
+    background: darkgrey;
 }
 
 .mimi{
@@ -65,7 +58,7 @@ a{
         display: flex;
     }
     section{
-        flex: 4;
+        flex: 3;
     }
     
     aside{

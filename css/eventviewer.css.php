@@ -14,7 +14,7 @@ main{
 }
 
 aside{
-    background: #867979;
+    background: #2F847C;
     border: 2px solid grey;
     border-radius: 5px;
     margin-right: 2%;
@@ -22,7 +22,7 @@ aside{
 }
 
 section{
-    background: #a65959;
+    background: #126180;
     border: 2px solid gray;
     border-radius: 5px;
 
@@ -30,7 +30,6 @@ section{
 
 article{
     margin-top: 20%;
-    padding: 1%; 
     border: 2px solid black;
     border-radius: 5px;
     font-size: 30px;
@@ -42,7 +41,13 @@ a{
     text-decoration: none;
 }
 
+.cc{
+    position: relative;
+    top: 10%;
+}
+
 #create-event1{
+    background-color: #008CBA;
 }
 
 #create-event1 :hover{

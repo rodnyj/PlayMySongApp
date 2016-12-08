@@ -118,8 +118,29 @@ session_start();
                 else 
                 {
                     if($_GET['choice']){
-                        echo "<h1 class=isnotset> PLEASE LOGIN: <a class=isnotset href=signin.php> CLICK HERE </a></h1>";
-                        echo "<h1 class=isnotset> DON'T HAVE AN ACCOUNT? <br>PLEASE SIGNUP: <a class=isnotset href=signup.php> CLICK HERE </a></h1>";
+                        
+                        echo "
+                        <div class=cc>
+                        <h3 class=center> Please Login To Use Our Services <br><br> To Login<br> Click Below &darr;<br> 
+                        <button class=butn>
+                        <a href=signin.php>Login</a>
+                        </button>
+                        </h3><br/>
+                        </div>
+                        <br><br>
+                        ";
+
+                        echo "
+                        <div class=cc>
+                        <hr>
+                        <br><br><br>
+                        <h3 class=center> Not Yet A Member? Please Signup. <br>Our Services Are 100% FREE :)<br><br> To Signup<br> Click Below &darr;<br> 
+                        <button class=butn>
+                        <a href=signup.php>Signup</a>
+                        </button>
+                        </h3><br/>
+                        </div>
+                        ";
                     }
                 }
             ?>
