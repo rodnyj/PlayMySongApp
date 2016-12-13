@@ -94,14 +94,28 @@ session_start();
                         if($_GET['choice'] == 2)
                         {
                             include 'view_my_rsvp.php';
-      
+                            if(($_GET['remove'] == "on"))
+                            {
+                              remove_on($result); 
+                            }
+                            else
+                            {
+                                echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO REQUEST A SONG</h1>";
+                                echo "<div class='default default-28'> <button><a href='eventviewer.php?choice=2&remove=on'> 
+                                        Click Here To Remove An Event</a></button></div>";
+                                echo "<hr>"; 
+                                my_rsvp_func($result);
+                            }
+                                      
                         }
                         
                         if($_GET['choice'] == 3)
                         {
                             include 'my_event.php';
                             if(($_GET['delete'] == "on"))
-                              delete_on($result);  
+                            {
+                              delete_on($result); 
+                            }
                             else
                             {
                                 my_event($result);

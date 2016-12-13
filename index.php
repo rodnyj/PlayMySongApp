@@ -45,13 +45,6 @@ session_start();
                 <br />
                 
                 <div>
-<iframe src="../www.google.com" name="iframe_a"></iframe>
-
-<p><a href="http://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>                </div>
-
-            </article>
-                    <img class=side-img src=./img/homepage/tumblr_inline_n0gn7hU7gg1sohk3w.gif>             
-            <article>
                 
             </article>
 
@@ -94,6 +87,21 @@ session_start();
                 ?>
                 
             </article>
+<!--           
+            <article>
+                
+                <div class="cal">
+                    <h1> Today's Date</h1>
+                    <div class="cal2">
+                        <h2>1</h2>
+                    </div>
+                
+                    <div class="cal3">
+                        <p>January 1, 2016</p>
+                    </div>
+                </div>
+            </article>
+-->
         </aside>
     </main>
     <!-- footer -->

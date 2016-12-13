@@ -39,6 +39,28 @@ article{
     max-width: 100%;
 }
 
+/* ---------------------------------------- calendar ----------- */
+div.cal {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: -4%;
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+div.cal2 {
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.cal3 {
+    padding: 10px;
+}
+
 /* Colors ---------------------- */
 .riri{
     background-image: url("../img/homepage/cb1532b03a0ffa6c8c26d0348a7eb60d.jpg");

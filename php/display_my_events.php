@@ -69,6 +69,11 @@ function my_event($result)
 function delete_on($result)
 {
 
+  if($_GET['delete_event'] == "on")
+  {
+   include './php/redirect.php';
+    exit;
+  }
     echo "<h1 class='center rsvp_header'> Caution!! <br>Events CAN'T be retrieved once Deleted!!! :( <br> Click An Event To Delete</h1>";
     echo "<div class='default default-10'> <button><a href='eventviewer.php?choice=3'> Return</a></button></div>";
     echo "<hr>";
@@ -84,7 +89,7 @@ function delete_on($result)
             //echo "<div class=discover-main>";
             echo "
                     <div class='flex-item-delete'>
-                        <a class=a-delete href=song_requests.php?songrequest=".$row["event_id"].">
+                        <a class=a-delete href=eventviewer.php?choice=3&delete=on&delete_event=on&event_id=".$row["event_id"].">
                            <!-- <div class=a-delete>
                                 <p class=in> Name </p>
                                 <p class=in> Location </p> -->
@@ -97,7 +102,7 @@ function delete_on($result)
         {
             echo "
                     <div class='flex-item-delete'>
-                        <a href=song_requests.php?songrequest=".$row["event_id"].">
+                        <a href=eventviewer.php?choice=3&delete=on&delete_event=on&event_id=".$row["event_id"].">
                             <!--<div class=a-delete>
                                 <p class=in> Name </p>
                                 <p class=in> Location </p> -->
