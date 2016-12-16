@@ -15,7 +15,8 @@
         }
         else
         {
-            //displays the event    
+            //displays the event 
+            //
             include './php/display_events_rsvp.php';
         }
 //while($row = $result->fetch_assoc()) // mysqli_fetch_assoc($result);
