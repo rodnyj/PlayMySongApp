@@ -93,15 +93,35 @@ session_start();
                     
                         if($_GET['choice'] == 2)
                         {
-                            include 'view_my_rsvp.php';
-      
+                            include './php/display_events_rsvp.php'; 
+                            //include 'view_my_rsvp.php';
+                            if(($_GET['remove'] == "on"))
+                            {
+                              remove_on($result); 
+                            }
+                            else
+                            {
+                                include 'view_my_rsvp.php';
+
+                                echo '<iframe src="views.php" height="200" width="300"></iframe>';
+                            
+                                echo "
+                                
+                                        <hr>
+                                        Click HERE for help
+                                    
+                                    ";
+                            }
+                                      
                         }
                         
                         if($_GET['choice'] == 3)
                         {
                             include 'my_event.php';
                             if(($_GET['delete'] == "on"))
-                              delete_on($result);  
+                            {
+                              delete_on($result); 
+                            }
                             else
                             {
                                 my_event($result);
@@ -118,8 +138,29 @@ session_start();
                 else 
                 {
                     if($_GET['choice']){
-                        echo "<h1 class=isnotset> PLEASE LOGIN: <a class=isnotset href=signin.php> CLICK HERE </a></h1>";
-                        echo "<h1 class=isnotset> DON'T HAVE AN ACCOUNT? <br>PLEASE SIGNUP: <a class=isnotset href=signup.php> CLICK HERE </a></h1>";
+                        
+                        echo "
+                        <div class=cc>
+                        <h3 class=center> Please Login To Use Our Services <br><br> To Login<br> Click Below &darr;<br> 
+                        <button class=butn>
+                        <a href=signin.php>Login</a>
+                        </button>
+                        </h3><br/>
+                        </div>
+                        <br><br>
+                        ";
+
+                        echo "
+                        <div class=cc>
+                        <hr>
+                        <br><br><br>
+                        <h3 class=center> Not Yet A Member? Please Signup. <br>Our Services Are 100% FREE :)<br><br> To Signup<br> Click Below &darr;<br> 
+                        <button class=butn>
+                        <a href=signup.php>Signup</a>
+                        </button>
+                        </h3><br/>
+                        </div>
+                        ";
                     }
                 }
             ?>

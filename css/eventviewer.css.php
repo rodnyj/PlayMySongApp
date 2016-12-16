@@ -14,15 +14,12 @@ main{
 }
 
 aside{
-    background: #867979;
-    border: 2px solid grey;
-    border-radius: 5px;
+
     margin-right: 2%;
     padding: 5px;
 }
 
 section{
-    background: #a65959;
     border: 2px solid gray;
     border-radius: 5px;
 
@@ -30,7 +27,6 @@ section{
 
 article{
     margin-top: 20%;
-    padding: 1%; 
     border: 2px solid black;
     border-radius: 5px;
     font-size: 30px;
@@ -42,7 +38,12 @@ a{
     text-decoration: none;
 }
 
+.cc{
+    position: relative;
+}
+
 #create-event1{
+    background-color: #008CBA;
 }
 
 #create-event1 :hover{
@@ -59,12 +60,11 @@ a{
 }
 
 #event_viewer_main_img{
-    position: relative;
     display: block;
     margin: 0 auto;
+    margin-top: 5%;
     width:70%;
     height: 400px;
-    top: 4em;
 }
 
 #e_v_m_i_div{
@@ -95,7 +95,7 @@ a.isnotset{
     }
     
     aside{
-        flex: 1;
+        flex: 0.7;
     }
 }
 

@@ -18,19 +18,9 @@
         else
         {
             echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO REQUEST A SONG</h1>";
-            echo "<div class='default default-28'> <button> Click Here To Remove An Event</button></div>";
+            echo "<div class='default default-28'> <button><a href='eventviewer.php?choice=2&remove=on'> 
+                    Click Here To Remove An Event</a></button></div>";
             echo "<hr>";
-            //echo "<div class='default default-80'>";
-            while($rsvp_rows = $run->fetch_assoc()) // fetches all rows that meets condition
-            {
-                // troubleshoot echo $rsvp_rows['event_id'];
-                $sql2 = "SELECT * FROM Event WHERE event_id ='".$rsvp_rows['event_id']."';";
-                $result = my_sql_exec($conn, $sql2);
-                
-                //displays the event    
-                include './php/display_events_rsvp.php';
-            }
-            //echo "</div>";
         }
 
 //while($row = $result->fetch_assoc()) // mysqli_fetch_assoc($result);
