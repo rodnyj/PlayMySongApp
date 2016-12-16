@@ -113,6 +113,7 @@ function delete_on($result)
                 ";
         }
         echo '
+                        <h3>'.$row["event_name"].'</h3>
                         <p class=container-pat>'.$row["description"].'</p>
                        <!-- </div> -->
                     </a>

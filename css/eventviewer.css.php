@@ -14,15 +14,12 @@ main{
 }
 
 aside{
-    background: #2F847C;
-    border: 2px solid grey;
-    border-radius: 5px;
+
     margin-right: 2%;
     padding: 5px;
 }
 
 section{
-    background: #126180;
     border: 2px solid gray;
     border-radius: 5px;
 
@@ -43,7 +40,6 @@ a{
 
 .cc{
     position: relative;
-    top: 10%;
 }
 
 #create-event1{
@@ -64,12 +60,11 @@ a{
 }
 
 #event_viewer_main_img{
-    position: relative;
     display: block;
     margin: 0 auto;
+    margin-top: 5%;
     width:70%;
     height: 400px;
-    top: 4em;
 }
 
 #e_v_m_i_div{
@@ -100,7 +95,7 @@ a.isnotset{
     }
     
     aside{
-        flex: 1;
+        flex: 0.7;
     }
 }
 

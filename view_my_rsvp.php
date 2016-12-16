@@ -17,8 +17,10 @@
         }
         else
         {
-            //displays the event    
-            include './php/display_events_rsvp.php';
+            echo "<h1 class='center rsvp_header'> CLICK AN EVENT TO REQUEST A SONG</h1>";
+            echo "<div class='default default-28'> <button><a href='eventviewer.php?choice=2&remove=on'> 
+                    Click Here To Remove An Event</a></button></div>";
+            echo "<hr>";
         }
 
 //while($row = $result->fetch_assoc()) // mysqli_fetch_assoc($result);

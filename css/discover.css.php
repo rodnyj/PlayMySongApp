@@ -2,6 +2,9 @@
 	header('Content-type: text/css; Charset: UTF-8');
 ?>
 
+main{
+    background-color: lightgrey;
+}
 
 input.radio {
     width: auto;
@@ -14,12 +17,17 @@ no-block{
 }
 
 .discover-main{
-    border: 2px solid darkblue;
-    border-radius: 5px;
+    border: 3px solid darkblue;
     diplay: block;
     margin: 0 auto;
-    
-    width: 80%;
+    height: 100%;
+    margin-bottom: 1%;
+}
+
+.padd{
+    padding-top: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .center2{
@@ -36,15 +44,13 @@ inline{
 .default_event_img{
     display: block;
     margin: 0 auto;
-    max-width: 80%;
-    padding: 1%;
+    width: 100%;
 }
 
 .custom_event_img{
     display: block;
     margin: 0 auto;
-    max-width: 80%;
-    padding: 1%;
+    width: 100%;
 }
 
 .event-details{
@@ -56,41 +62,70 @@ a.a{
     color: darkblue;
 }
 
+    .flex_check{
+        display: flex;
+        background-color: gray;
+    }
+    
+    .flex_check_child{
+        flex: 1;
+    }
+
+/* ---------------------------------------------- Media Queries ------ */
+@media screen and (min-width: 601px){
+    .flex-container-discover{
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .discover-main{
+        width: 30%;
+    }
+}
+
+/* ------------------------------------------------ Media Queries ---- */
 @media screen and (max-width: 600px){
-body{
-    background-color: lightgray;
-}
-
-.center{
-    margin: 3%;
-}
-
-.center2{
-    margin-left: 35%;
-    display: block;
-    border: 2px solid black;
-    border-radius: 5px;
-
-}
-
-.center3{
-    margin-top: 4%;
-    margin-left: 46%;
-    display: block;
-
-}
-
-.center4{
-    margin-left: 32%;
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 2%;
-}
-
-.center5{
-    border: 2px solid black;
-    border-radius: 5px;
-    margin-top: 2%;
-}
+    body{
+        background-color: lightgray;
+    }
+    
+    .discover-main{
+        width: 90%;
+        margin-bottom: 3%;
+    }
+    
+    .center{
+        margin: 3%;
+    }
+    
+    .center2{
+        margin-left: 35%;
+        display: block;
+        border: 2px solid black;
+        border-radius: 5px;
+    
+    }
+    
+    .center3{
+        margin-top: 4%;
+        margin-left: 46%;
+        display: block;
+    
+    }
+    
+    .center4{
+        margin-left: 32%;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-top: 2%;
+    }
+    
+    .center5{
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-top: 2%;
+    }
 
 }

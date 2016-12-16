@@ -36,6 +36,10 @@ if($_GET['delete_event'] == "on")
     $sql = "DELETE FROM Event WHERE event_id=".$_GET['event_id'].";";
     //$sql = "SELECT * FROM Event WHERE event_id=".$_GET['event_id'].";";
     my_sql_exec($conn, $sql);
+    
+    $sql = "DELETE FROM RSVP WHERE event_id=".$_GET['event_id'].";";
+    //$sql = "SELECT * FROM Event WHERE event_id=".$_GET['event_id'].";";
+    my_sql_exec($conn, $sql);    
 
    header('location: eventviewer.php?choice=3&delete=on');
 }
