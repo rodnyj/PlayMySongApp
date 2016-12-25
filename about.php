@@ -2,6 +2,7 @@
 <?php
 // Start the session
 session_start();
+require 'corefunc.php';
 ?>
 
 <!DOCTYPE html>
@@ -91,15 +92,17 @@ session_start();
                         {            
                             echo "<article>";
                                 
-                                include './php/bug.php';
+                                //corefunc
+                                bug();
 
                             echo "</article>"; 
                         }
                         elseif (isset($_GET['feedback'])) 
                         {
                             echo "<article>";
-                                    
-                                include './php/feedback.php';
+                                
+                                //corefunc    
+                                feedback();
                             echo "</article>";
                         }
                         else{
