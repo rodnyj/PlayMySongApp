@@ -1,19 +1,22 @@
-<div>
-    <form id="form1" method="post"  action="about.php?bugreport=set">
-        <div class=t-d>
-            <table border=0 style="text-align:left" class="bug-table">
-                <tr><td class=td-bug>Your Name:</td><td> <input type="text" name="name"></td></tr>
-                <tr><td class=td-bug>Report A Bug:</td><td>  <textarea id=area-width rows="4" cols="50" name="bug"></textarea></td></tr>
-            </table>
-        <div>
-        <div id="button-div">
-            <button type="submit" value="Submit" class="default1 button1 but"  name="submit">Submit</button>
-            <button type="reset" value="Reset" class="default1 button2">Reset</button>
-        </div>
-    </form>
-<div>
-
 <?php
+    echo '
+    <div>
+        <form id="form1" method="post"  action="about.php?bugreport=set">
+            <div class=t-d>
+                <table border=0 style="text-align:left" class="bug-table">
+                    <tr><td class=td-bug>Your Name:</td><td> <input type="text" name="name"></td></tr>
+                    <tr><td class=td-bug>Report A Bug:</td><td>  <textarea id=area-width rows="4" cols="50" name="bug"></textarea></td></tr>
+                </table>
+            <div>
+            <div id="button-div">
+                <button type="submit" value="Submit" class="default1 button1 but"  name="submit">Submit</button>
+                <button type="reset" value="Reset" class="default1 button2">Reset</button>
+            </div>
+        </form>
+    <div>
+    ';
+
+
     include './php/my_sql_exec.php';    
     
     $name = $_POST['name'];
