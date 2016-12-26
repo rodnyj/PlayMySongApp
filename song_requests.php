@@ -1,10 +1,9 @@
 <?php
 // Start the session
 session_start();
+require 'corefunc.php';
 
 $event_id = $_GET['songrequest'];
-
-include './php/my_sql_exec.php';
 
 $user_verification = "SELECT user_id FROM Event WHERE event_id='".$event_id."';"; 
 $conn = connection();
@@ -55,8 +54,8 @@ $result = my_sql_exec($conn, $sql);
                                 echo "<b>Song Name: </b>&nbsp;" .$rows['song_name'] . "<br>";
                                 echo " <b> Artist: </b>&nbsp;" .$rows['artist'] . "<br><br>";  
                                 $song_id = $rows['song_id'];
-                                echo "<button><a class=none href=./php/redirect.php?approval=w&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Add To WishList </a></button> &nbsp;"; 
-                                echo "<button><a href=./php/redirect.php?approval=n&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Remove </a></button><br><br>";
+                                echo "<button><a class=none href=redirect.php?approval=w&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Add To WishList </a></button> &nbsp;"; 
+                                echo "<button><a href=redirect.php?approval=n&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Remove </a></button><br><br>";
                                 echo "<hr>";
                             echo "</div>";
                         }
@@ -82,8 +81,8 @@ $result = my_sql_exec($conn, $sql);
                                         echo "<b>Song Name: </b>&nbsp;" .$rows['song_name'] . "<br>";
                                         echo " <b> Artist: </b>&nbsp;" .$rows['artist'] . "<br><br>";  
                                         $song_id = $rows['song_id'];
-                                        echo "<button><a class=none href=./php/redirect.php?approval=y&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Approve </a></button> &nbsp;"; 
-                                        echo "<button><a href=./php/redirect.php?approval=w&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Add To WishList </a></button><br><br>";
+                                        echo "<button><a class=none href=redirect.php?approval=y&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Approve </a></button> &nbsp;"; 
+                                        echo "<button><a href=redirect.php?approval=w&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Add To WishList </a></button><br><br>";
                                         echo "<hr>";
                                     echo "</div>";
                                 }
@@ -129,8 +128,8 @@ $result = my_sql_exec($conn, $sql);
                                 echo "<b>Song Name: </b>&nbsp;" .$rows['song_name'] . "<br>";
                                 echo " <b> Artist: </b>&nbsp;" .$rows['artist'] . "<br><br>";  
                                 $song_id = $rows['song_id'];
-                                echo "<button><a class=none href=./php/redirect.php?approval=y&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Approve </a></button> &nbsp;"; 
-                                echo "<button><a href=./php/redirect.php?approval=n&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Remove </a></button><br><br>";
+                                echo "<button><a class=none href=redirect.php?approval=y&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Approve </a></button> &nbsp;"; 
+                                echo "<button><a href=redirect.php?approval=n&song_id=".$song_id."&songrequest_id=".$_GET['songrequest']."> Remove </a></button><br><br>";
                                 echo "<hr>";
                             echo "</div>"; 
                         }

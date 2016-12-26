@@ -1,8 +1,8 @@
 <?php
 // Start the session
 session_start();
-
-require './php/my_sql_exec.php';
+require 'corefunc.php';
+my_sql_exec();
 
 ?>
 

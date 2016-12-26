@@ -1,6 +1,6 @@
 <?php
 
-    require 'my_sql_exec.php';
+    require 'corefunc.php';
     
     $conn = connection();
     

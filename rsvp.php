@@ -1,5 +1,6 @@
-<!-- template -->
-
+<?php
+require 'corefunc.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -25,7 +26,6 @@
         
         // Start the session
         session_start();
-        include './php/my_sql_exec.php';
         $conn = connection();
         
         //grabs the event id from url

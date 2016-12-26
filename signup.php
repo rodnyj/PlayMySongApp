@@ -1,4 +1,7 @@
-<!-- template -->
+<?php
+    require 'corefunc.php';
+?>
+
 
 <!DOCTYPE html>
 <html>
@@ -47,7 +50,6 @@
 <?php
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-include('./php/my_sql_exec.php');
 
 // variables initialized
 $firstname = htmlspecialchars(trim($_POST['firstname']));
@@ -71,8 +73,8 @@ elseif($firstname == NULL || $lastname == NULL || $email == NULL || $username ==
     echo "<p class=center>ALL Fields are Required</p>";
 else{
     $conn = connection();
-    include './php/create_database.php';
-    include './php/create_tables.php';
+    //include './php/create_database.php';
+    createTables($conn);
     
     $sql = "SELECT * FROM Users WHERE username = '" . $username . "';";
     
@@ -86,7 +88,7 @@ else{
     //For example: <input type="file" name="myfile">
     //return the file name in the server side after it is successfully uploaded
     //otherwise return NULL
-    function uploadfile($myfile)
+    function uploadfiles($myfile)
     {
         $dir = "uploads/";
         $file = $dir . basename($_FILES[$myfile]['name']);
@@ -113,7 +115,7 @@ else{
     }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //name of the file from input
-		  $file = uploadfile("myfile");
+		  $file = uploadfiles("myfile");
           //user_id is included VALUES('', )
 		  $sql = "INSERT INTO Users VALUES('','".
 		           

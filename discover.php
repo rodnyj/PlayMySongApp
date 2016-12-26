@@ -1,7 +1,7 @@
 <?php
 // Start the session
 session_start();
-include './php/my_sql_exec.php';
+require 'corefunc.php';
 $conn = connection();
 ?>
 
@@ -86,14 +86,14 @@ $conn = connection();
                                 else
                                 {
                                     //displays the event    
-                                    include './php/display_events.php';
+                                    display_events($result);
                                 }
                             }
                         }
                         elseif(isset($_POST['all']))
                         {
                             //displays the event
-                            include './php/display_events.php';
+                            display_events($result);
                         
                         }
                     }

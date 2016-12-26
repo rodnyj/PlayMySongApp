@@ -1,6 +1,7 @@
 <?php
 //starts a session
 session_start();
+require 'corefunc.php';
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +11,6 @@ session_start();
     <!-- meta -->
     <?php 
         include './php/meta.php';
-        include './php/my_sql_exec.php';
     ?>
     
     <title>

@@ -3,6 +3,7 @@
 session_start();
 //remember to go in and close all database connections
 //mysqli_close($conn);
+require 'corefunc.php';
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +73,6 @@ session_start();
                 
                 if(isset($_SESSION['username']))
                 {
-                    include './php/my_sql_exec.php';
                     $conn = connection();
                     
                     if(isset($_GET['choice']))
@@ -83,7 +83,7 @@ session_start();
                             echo "<h3 id=create_event_header>Create A New Event</h3>";
             ?>
                     <!-- choice 1 html form -->
-                    <?php include('create_event.php'); ?>
+                    <?php include 'create_event.php'; ?>
             
             <!-- continuation of choices -->    
             <?php
@@ -92,7 +92,21 @@ session_start();
                     
                         if($_GET['choice'] == 2)
                         {
-                            include 'view_my_rsvp.php';
+                            $sql = "SELECT * FROM RSVP WHERE user_id ='".$_SESSION['userid']."';";
+                            $run = my_sql_exec($conn, $sql);
+                            if(mysqli_num_rows($run)<= 0)
+                            {
+                                echo "
+                                <div class=bb>
+                                <h3 class=center> You Dont Have Any RSVP'S :(<br><br> To RSVP For An Event<br> Click Below &darr;<br>
+                                <button class=butn>
+                                <a href=discover.php?choice=1>DISCOVER</a>
+                                </button>
+                                </h3><br/>
+                                </div>
+                                ";
+                            }
+                            
                             if(($_GET['remove'] == "on"))
                             {
                               remove_on($result); 
@@ -110,7 +124,22 @@ session_start();
                         
                         if($_GET['choice'] == 3)
                         {
-                            include 'my_event.php';
+                            $sql = "SELECT * FROM Event WHERE user_id='" .$_SESSION['userid']. "';";
+
+                            $result = my_sql_exec($conn, $sql);
+                            if(mysqli_num_rows($result)<=0) //if it is empty or returns zero
+                            {
+                                    echo "
+                                    <div class=bb>
+                                    <h3 class=center> You Dont Have Any Events :(<br><br> To Create Your First Event<br> Click Below &darr;<br> 
+                                    <button class=butn>
+                                    <a href=eventviewer.php?choice=1>CREATE EVENT</a>
+                                    </button>
+                                    </h3><br/>
+                                    </div>
+                                    ";
+                            }
+
                             if(($_GET['delete'] == "on"))
                             {
                               delete_on($result); 

@@ -1,5 +1,4 @@
 <?php
-include './php/my_sql_exec.php';
 //include './php/create_tables.php';
 
 $username = htmlspecialchars(trim($_POST['username']));

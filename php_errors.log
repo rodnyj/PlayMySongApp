@@ -44,3 +44,9 @@
 [20-Dec-2016 05:12:51 UTC] PHP Fatal error:  Call to undefined function my_sql_exec() in /home/ubuntu/workspace/PlayMySongApp.1/php/create_tables.php on line 5
 [20-Dec-2016 05:12:51 UTC] PHP Stack trace:
 [20-Dec-2016 05:12:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/PlayMySongApp.1/php/create_tables.php:0
+[26-Dec-2016 02:09:01 UTC] PHP Warning:  require(corefunc.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php on line 3
+[26-Dec-2016 02:09:01 UTC] PHP Stack trace:
+[26-Dec-2016 02:09:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php:0
+[26-Dec-2016 02:09:01 UTC] PHP Fatal error:  require(): Failed opening required 'corefunc.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php on line 3
+[26-Dec-2016 02:09:01 UTC] PHP Stack trace:
+[26-Dec-2016 02:09:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php:0

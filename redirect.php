@@ -3,7 +3,7 @@
 
 if(isset($_GET['approval']))
 {
-include 'my_sql_exec.php';
+require 'corefunc.php';
 $conn = connection();
     if($_GET['approval'] == 'y')
     {
@@ -27,7 +27,7 @@ $conn = connection();
     }
 
     mysqli_close($conn);
-    header('location: ../song_requests.php?songrequest='.$_GET['songrequest_id']);
+    header('location: song_requests.php?songrequest='.$_GET['songrequest_id']);
 }
 
 if($_GET['delete_event'] == "on")

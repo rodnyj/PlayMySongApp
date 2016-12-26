@@ -1,7 +1,3 @@
-<?php
-require 'corefunc.php';
-
-include './php/file_upload.php'; ?>
 <form id="create_event_form" method="POST" enctype="multipart/form-data" action="eventviewer.php?choice=1" >
     <table class=createevent>
         <tr><td class=createevent>Event Name:</td> <td><input class="c_e_class" id="create_event_name_id" type="text" name="event_name"/></td></tr>

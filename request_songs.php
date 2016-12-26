@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+require 'corefunc.php';
 ?>
 <!DOCTYPE html>
 <html>
@@ -60,7 +61,6 @@ session_start();
                }
                else 
                { 
-                   include './php/my_sql_exec.php';
                    $conn = connection();
                    
                    $sql = "SELECT * FROM RSVP WHERE rsvp_id=" .$_SESSION['rsvp_id_sr'].";";

@@ -1,8 +1,10 @@
 <?php
 
+//1
     //database connection
     function connection()
     {
+        //c9
         //create database connection
         $hostname = "127.0.0.1";
         $password = "";
@@ -13,8 +15,11 @@
             if(!$conn)
             die("Connection failed: ".mysqli_connect_error());  
         return $conn;
+        
+        //Heroku
     }
     
+//2    
     //query a string to database
     function my_sql_exec($conn, $sql)
     {
@@ -37,15 +42,42 @@
         }
         return $result;
     }
-    
+
+//3    
     function model()
     {
         
     }
 
-    function createTables()
+//4
+    function createTables($conn)
     {
+        //c9 Connection
+        /*
+        
+        //create database connection
+        $hostname = "127.0.0.1";
+        $password = "";
+        $my_username = "rodnyjoseph";
+        $dbname = "play_my_song";
+        $port = 3306; 
+        $conn = mysqli_connect($hostname, $my_username, $password, "", $port);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        } 
+        
+        // Create database
+        $sql = "CREATE DATABASE IF NOT EXISTS TESTDB2;";
+        $conn->query($sql);
+        
+        $sql = "USE play_my_song;";
+        $conn->query($sql);
+        
+        */
         /////////////////////////////////////////////// create Users table
+
+            
         	//verify if table is already created
             $sql = "SHOW TABLES LIKE 'Users';";
             $result = my_sql_exec($conn, $sql);
@@ -65,6 +97,7 @@
                     	);
                 ";
                 my_sql_exec($conn, $sql);
+                echo "SUCCESS!";
             }
         ////////////////////////////////////////////// create Event table
         	//verify if table is already created
@@ -158,14 +191,15 @@
                         event_id int UNSIGNED NOT NULL,
                         song_name VARCHAR(50) NOT NULL,
                         artist VARCHAR(50),
-                        approval enum('Y','N')
+                        approval enum('Y','N','W')
                         );
                 ";
                 my_sql_exec($conn, $sql);
             }
-        ///////////////////////////////////////////////////////////////////////////////
+        ////////////////////////////////////////////////////////////////////////////////////////////////
     }
 
+//5
     function uploadfile($myfile, $dir)
     {
         //$dir = "uploads/";
@@ -191,7 +225,8 @@
         
         return NULL;
     }
-    
+
+//6    
     function bug()
     {
         echo '
@@ -246,7 +281,8 @@
             }
         }   
     }
-    
+
+//7    
     function feedback()
     {
         echo '
@@ -302,7 +338,8 @@
             }
         }
     }
-    
+
+//8    
     function author()
     {
         echo '
@@ -320,7 +357,7 @@
     }
     
     
-    function display_events()
+    function display_events($result)
     {
         echo "<div class=flex-container-discover>"; 
         //will grab all contents from database and display them by their name
