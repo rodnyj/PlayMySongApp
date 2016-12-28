@@ -511,7 +511,7 @@
         
         if($_GET['remove_event'] == "on")
         {
-        include './php/redirect.php';
+        include 'redirect.php';
         exit;
         }    
         
@@ -653,7 +653,7 @@
     
       if($_GET['delete_event'] == "on")
       {
-       include './php/redirect.php';
+       include 'redirect.php';
         exit;
       }
         echo "<h1 class='center rsvp_header'> Caution!! <br>Events CAN'T be retrieved once Deleted!!! :( <br> Click An Event To Delete</h1>";
