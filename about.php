@@ -23,6 +23,7 @@ require 'corefunc.php';
 </head>
 
 <body>
+    <!-- -->
     
     <!-- navigation -->
     <?php include './php/nav.php';?>
