@@ -6,7 +6,6 @@
     {
         //create database connection
 
-
         //c9
         
         $hostname = "127.0.0.1";
@@ -15,29 +14,30 @@
         $dbname = "play_my_song";
         $port = 3306; 
         $conn = mysqli_connect($hostname, $my_username, $password, $dbname, $port);
-            if(!$conn)
-            die("Connection failed: ".mysqli_connect_error());  
+            //if(!$conn)
+            //die("Connection failed: ".mysqli_connect_error());  
+            
+        if($conn)
         return $conn;
-        
-        
-        //Heroku
-        /*
-        $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $cleardb_server = $cleardb_url["host"];
-        $cleardb_username = $cleardb_url["user"];
-        $cleardb_password = $cleardb_url["pass"];
-        $cleardb_db = substr($cleardb_url["path"], 1);
-        //create database connection
-        $hostname = $cleardb_server;
-        $password = $cleardb_password;
-        $my_username = $cleardb_username;
-        $dbname = $cleardb_db;
-        $port = 3306;
-        $conn = mysqli_connect($hostname, $my_username, $password, $dbname, $port);
-            if(!$conn)
-            die("Connection failed: ".mysqli_connect_error());  
-        return $conn;
-        */
+        else
+        {
+            //Heroku
+            $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+            $cleardb_server = $cleardb_url["host"];
+            $cleardb_username = $cleardb_url["user"];
+            $cleardb_password = $cleardb_url["pass"];
+            $cleardb_db = substr($cleardb_url["path"], 1);
+            //create database connection
+            $hostname = $cleardb_server;
+            $password = $cleardb_password;
+            $my_username = $cleardb_username;
+            $dbname = $cleardb_db;
+            $port = 3306;
+            $conn = mysqli_connect($hostname, $my_username, $password, $dbname, $port);
+                if(!$conn)
+                die("Connection failed: ".mysqli_connect_error());  
+            return $conn;
+        }
     }
     
 //2    
