@@ -43,7 +43,8 @@ require 'corefunc.php';
                     echo "<h3 class=center>". $_SESSION['firstname'] . " " . $_SESSION['lastname'] . "</h3>";
                     echo "<h3 class=center>". $_SESSION['email']. "</h3><br>";
                     echo "<a class=center href=developer.php?reports=true><h3>Reports </h3></a><br> ";
-                    echo "<a class=center href=./php/developer_account.php><h3>Dev Acc </h3></a><br> ";
+                    echo "<a class=center href=./php/developer_account.php><h3>Create Reports DB Tables </h3></a><br> ";
+                    echo "<a class=center href=profile.php?drop=on><h3>Drop All DB Tables</h3></a><br> ";
     
                     if($_GET['choice']==1)
                     {
@@ -54,6 +55,10 @@ require 'corefunc.php';
                         session_destroy();
                         
                         header("location:index.php");
+                    }
+                    if($_GET['drop'] == 'on')
+                    {
+                        dropTables();
                     }
                     echo "<h3 class=center> <a href=profile.php?choice=1> CLICK HERE TO LOG OUT </a></h3>";
 
