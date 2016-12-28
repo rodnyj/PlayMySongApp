@@ -14,6 +14,7 @@
         $dbname = "play_my_song";
         $port = 3306; 
         $conn = mysqli_connect($hostname, $my_username, $password, $dbname, $port);
+            //
             //if(!$conn)
             //die("Connection failed: ".mysqli_connect_error());  
             
