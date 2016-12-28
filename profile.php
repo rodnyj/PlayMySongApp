@@ -31,19 +31,20 @@ require 'corefunc.php';
         <?php
             if(isset($_SESSION['username']))
             {
-                if($_SESSION['username'] == 'Developer' || $_SESSION['username'] == 'rodny')
+                if($_SESSION['username'] == 'admin' || $_SESSION['username'] == 'rodny')
                 {
  
                     echo "<h1 class='profile_en center'> WELCOME " .$_SESSION['username']. "!</h1>" ;
                     echo "
                         <div>
-                            <img id=profileImg src='" .$_SESSION['profile_img']. "'>
+                            <img id=profileImg src='img/developer/developer.jpg'>
                         </div>    
                         ";
                     echo "<h3 class=center>". $_SESSION['firstname'] . " " . $_SESSION['lastname'] . "</h3>";
                     echo "<h3 class=center>". $_SESSION['email']. "</h3><br>";
                     echo "<a class=center href=developer.php?reports=true><h3>Reports </h3></a><br> ";
-                    echo "<a class=center href=./php/developer_account.php><h3>Dev Acc </h3></a><br> ";
+                    echo "<a class=center href=./php/developer_account.php><h3>Create Reports DB Tables </h3></a><br> ";
+                    echo "<a class=center href=profile.php?drop=on><h3>Drop All DB Tables</h3></a><br> ";
     
                     if($_GET['choice']==1)
                     {
@@ -54,6 +55,11 @@ require 'corefunc.php';
                         session_destroy();
                         
                         header("location:index.php");
+                    }
+                    //
+                    if($_GET['drop'] == 'on')
+                    {
+                        dropTables();
                     }
                     echo "<h3 class=center> <a href=profile.php?choice=1> CLICK HERE TO LOG OUT </a></h3>";
 

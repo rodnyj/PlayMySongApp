@@ -1,13 +1,13 @@
 <?php
-
-    require 'corefunc.php';
+    //
+    require '../corefunc.php';
     
     $conn = connection();
     
-    $password = "PriceClass2016";
+    $password = "12345678";
     $devpass = md5($password);
     
-    $sql = "SELECT * FROM Users WHERE username='".Developer."';";
+    $sql = "SELECT * FROM Users WHERE username='".admin."';";
     $result = my_sql_exec($conn, $sql);
     
     if(mysqli_num_rows($result) <= 0)

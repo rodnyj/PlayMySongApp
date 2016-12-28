@@ -751,4 +751,13 @@
         }        
     }
     
+    function dropTables()
+    {
+        $sql = "DROP TABLE IF EXISTS Users, Event, RSVP, WishList, Songs, SongRequest;";
+        $conn = connection();
+        
+        my_sql_exec($conn, $sql);
+    }
+    //
+    
 ?>
