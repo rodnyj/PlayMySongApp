@@ -1,6 +1,7 @@
 <?php
 // Start the session
 session_start();
+//
 require 'corefunc.php';
 ?>
 

@@ -56,6 +56,7 @@ require 'corefunc.php';
                         
                         header("location:index.php");
                     }
+                    //
                     if($_GET['drop'] == 'on')
                     {
                         dropTables();

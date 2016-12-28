@@ -1,5 +1,5 @@
 <?php
-
+    //
     require '../corefunc.php';
     
     $conn = connection();
