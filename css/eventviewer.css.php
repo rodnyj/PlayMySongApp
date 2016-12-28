@@ -86,7 +86,7 @@ a.isnotset{
 }
 
 /* Screensize 900px or larger---------- */
-@media(min-width: 900px){
+@media(min-width: 781px){
     main{
         display: flex;
     }
@@ -100,7 +100,7 @@ a.isnotset{
 }
 
 /* Screensize 600px or smaller---------- */
-@media(max-width: 600px){
+@media(max-width: 780px){
     main{
         margin: 0;
         padding: 0;

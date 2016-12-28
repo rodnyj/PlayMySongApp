@@ -72,7 +72,7 @@ a.a{
     }
 
 /* ---------------------------------------------- Media Queries ------ */
-@media screen and (min-width: 601px){
+@media screen and (min-width: 781px){
     .flex-container-discover{
         display: flex;
         flex-wrap: wrap;
@@ -86,7 +86,7 @@ a.a{
 }
 
 /* ------------------------------------------------ Media Queries ---- */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 780px){
     body{
         background-color: lightgray;
     }

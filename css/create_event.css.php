@@ -64,7 +64,7 @@ td.createevent{
 
 /* Media Query ------------------------- */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 780px){
     #event_viewer_main_img{
         height: 0;
     }

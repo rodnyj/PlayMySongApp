@@ -33,7 +33,7 @@ a-delete{
 }
 
 /* Media Query ---------------------------------------- */
-@media screen and (min-width: 601px){
+@media screen and (min-width: 781px){
 
     .flex-container-delete {
         display: flex;
@@ -50,7 +50,7 @@ a-delete{
 }
 
 /* Media Query ---------------------------------------- */
-@media screen and (max-width: 601px){
+@media screen and (max-width: 780px){
     
     .flex-item-delete {
         margin: 20px;

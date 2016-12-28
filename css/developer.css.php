@@ -25,7 +25,7 @@ section{
 }
 
 /* Screensize 900px or larger---------- */
-@media(min-width: 900px){
+@media(min-width: 781){
     main{
         display: flex;
     }
@@ -38,7 +38,7 @@ section{
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 780px){
     main{
         margin: 0;
     }

@@ -75,7 +75,7 @@ div.cal3 {
 }
 
 /* Screensize 900px or larger---------- */
-@media(min-width: 900px){
+@media(min-width: 781px){
     main{
         display: flex;
     }
@@ -90,7 +90,7 @@ div.cal3 {
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
-and (max-device-width : 604px) {
+and (max-device-width : 780px) {
 
     /* section article */
     section{

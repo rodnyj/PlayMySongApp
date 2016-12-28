@@ -138,7 +138,7 @@ ul.main-nav li.dropdown {
 
 /* Media Query ---------------------------- */
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 780px){
     ul.main-nav li.dropdown,
     ul.main-nav li {float: none;}
     .dropdown-content{ width: 100%; opacity: 0.8;}

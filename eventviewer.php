@@ -154,6 +154,7 @@ require 'corefunc.php';
                             include 'wishlist.php';
                         }
                     }
+                    mysqli_close($conn);
                 }
                 else 
                 {

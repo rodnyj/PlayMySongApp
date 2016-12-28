@@ -4,8 +4,11 @@
     //database connection
     function connection()
     {
-        //c9
         //create database connection
+
+
+        //c9
+        
         $hostname = "127.0.0.1";
         $password = "";
         $my_username = "rodnyjoseph";
@@ -16,7 +19,25 @@
             die("Connection failed: ".mysqli_connect_error());  
         return $conn;
         
+        
         //Heroku
+        /*
+        $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+        $cleardb_server = $cleardb_url["host"];
+        $cleardb_username = $cleardb_url["user"];
+        $cleardb_password = $cleardb_url["pass"];
+        $cleardb_db = substr($cleardb_url["path"], 1);
+        //create database connection
+        $hostname = $cleardb_server;
+        $password = $cleardb_password;
+        $my_username = $cleardb_username;
+        $dbname = $cleardb_db;
+        $port = 3306;
+        $conn = mysqli_connect($hostname, $my_username, $password, $dbname, $port);
+            if(!$conn)
+            die("Connection failed: ".mysqli_connect_error());  
+        return $conn;
+        */
     }
     
 //2    
@@ -278,6 +299,7 @@
                         </div>
                         
                     ";
+                mysqli_close($conn);
             }
         }   
     }
@@ -335,6 +357,7 @@
                         </div>
                         
                     ";
+                mysqli_close($conn);
             }
         }
     }
@@ -478,6 +501,7 @@
             echo "</tbody>";
             echo "</table>";
         }
+        mysqli_close($conn);
     }
     
     
@@ -553,6 +577,7 @@
             ';              
         }
         echo '</div>';
+        mysqli_close($conn);
     }
     
     /////////////////// MY EVENTS /////////////////////////////////////////////////////////////////////////////////
@@ -720,6 +745,7 @@
                     
                     header("Location:profile.php");
                 }
+                mysqli_close($conn);
             
             }
         }        
