@@ -31,13 +31,13 @@ require 'corefunc.php';
         <?php
             if(isset($_SESSION['username']))
             {
-                if($_SESSION['username'] == 'Developer' || $_SESSION['username'] == 'rodny')
+                if($_SESSION['username'] == 'admin' || $_SESSION['username'] == 'rodny')
                 {
  
                     echo "<h1 class='profile_en center'> WELCOME " .$_SESSION['username']. "!</h1>" ;
                     echo "
                         <div>
-                            <img id=profileImg src='" .$_SESSION['profile_img']. "'>
+                            <img id=profileImg src='img/developer/developer.jpg'>
                         </div>    
                         ";
                     echo "<h3 class=center>". $_SESSION['firstname'] . " " . $_SESSION['lastname'] . "</h3>";

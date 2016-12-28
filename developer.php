@@ -2,8 +2,6 @@
 // Start the session
 session_start();
 require 'corefunc.php';
-my_sql_exec();
-
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +30,7 @@ my_sql_exec();
         
             if(isset($_SESSION['username']))
             {
-                if($_SESSION['username'] == 'Developer')
+                if($_SESSION['username'] == 'admin')
                 {
                     
                   /*  $conn = connection();

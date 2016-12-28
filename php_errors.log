@@ -50,3 +50,9 @@
 [26-Dec-2016 02:09:01 UTC] PHP Fatal error:  require(): Failed opening required 'corefunc.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php on line 3
 [26-Dec-2016 02:09:01 UTC] PHP Stack trace:
 [26-Dec-2016 02:09:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php:0
+[28-Dec-2016 17:59:20 UTC] PHP Warning:  require(corefunc.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php on line 3
+[28-Dec-2016 17:59:20 UTC] PHP Stack trace:
+[28-Dec-2016 17:59:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php:0
+[28-Dec-2016 17:59:20 UTC] PHP Fatal error:  require(): Failed opening required 'corefunc.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php on line 3
+[28-Dec-2016 17:59:20 UTC] PHP Stack trace:
+[28-Dec-2016 17:59:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/PlayMySongApp.1/php/developer_account.php:0
