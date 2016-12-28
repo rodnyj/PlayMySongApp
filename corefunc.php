@@ -119,7 +119,6 @@
                     	);
                 ";
                 my_sql_exec($conn, $sql);
-                echo "SUCCESS!";
             }
         ////////////////////////////////////////////// create Event table
         	//verify if table is already created
